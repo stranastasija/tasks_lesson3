@@ -1,6 +1,6 @@
 ﻿// Показать числа от -N до N
 
-int numbers (int N)
+string numbers (int N)
 {
    int count = -N;
    while (count <= N)
@@ -8,6 +8,7 @@ int numbers (int N)
        Console.WriteLine(count);
        count++;
    } 
-   return ('N'); //почему выводится 78...
+   
+   return (N);
 }
 Console.Write (numbers(3));
