@@ -10,4 +10,4 @@ bool palindrom (int a)
     return (number[0] == number[4]) && (number[1] == number[3]);
     
 }
-Console.WriteLine($"{(palindrom(12321) ? "Число палиндром" : "Число не палиндром")}");
+Console.WriteLine($"{(palindrom(12301) ? "Число палиндром" : "Число не палиндром")}");
