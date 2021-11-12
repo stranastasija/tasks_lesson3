@@ -2,7 +2,7 @@
 // Заданное = 7
 
 
-double N = 48;
+double N = new Random().Next(0, 1000);
 Console.Write(N);
 
 double ost = N%7;
@@ -12,5 +12,5 @@ if (ost == 0)
 }
 else 
 {
-    Console.WriteLine(" - число не кратно, остаток = " + ost);
+    Console.WriteLine(" - число не кратно 7, остаток = " + ost);
 }
