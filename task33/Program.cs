@@ -1,27 +1,31 @@
 ﻿// Задать массив из 12 элементов, заполненных числами из [0,9]. 
 //Найти сумму положительных/отрицательных элементов массива
 
-int [] A = new int [12];
-int index = 0;
-
-while (index < 12)
+int element (int lenght)
 {
-    A [index] = new Random().Next(0, 9); 
-    index++;
-}
+    int [] A = new int [lenght];
+    int index = 0;
 
-index = 0;
-while (index < 12)
-{
-    int array = A[index];
-    Console.Write(array + " ");
-    index++;
-}
-Console.WriteLine(" ");
+    while (index < lenght)
+    {
+        A [index] = new Random().Next(0, 9); 
+        index++;
+    }
 
-int sum = 0;
-for (int i=0; i< 12; i++)
-{
-    sum +=A[i];
+    index = 0;
+    while (index < lenght)
+    {
+        int array = A[index];
+        Console.Write(array + " ");
+        index++;
+    }
+    Console.WriteLine(" ");
+
+    int sum = 0;
+    for (int i=0; i< lenght; i++)
+    {
+        sum +=A[i];
+    }
+    Console.WriteLine(sum);
 }
-Console.WriteLine(sum);
+Console.WriteLine(element(12));    

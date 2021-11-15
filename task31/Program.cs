@@ -1,18 +1,46 @@
 ﻿// Задать массив из 8 элементов и вывести их на экран 
 
-int [] A = new int [8];
-int index = 0;
-
-while (index < 8)
+int [] mas (int length)
 {
-    A [index] = new Random().Next(-100, 100);
-    index++;
+    int [] B = new int [length];
+    return B;
 }
 
-index = 0;
-while (index < 8)
+int [] zapolnenie (int [] C, int min, int max)
 {
-    int array = A[index];
+    int index = 0;
+
+    while (index < C.Length)
+    {
+    C [index] = new Random().Next(min, max);
+    index++;
+    }
+    return C;
+}
+
+
+void print (int [] massiv)
+{
+    Console.WriteLine("");
+    int index = 0;
+    while (index < massiv.Length)
+    {
+    int array = massiv[index];
     Console.Write(array + " ");
     index++;
+    }
+    
 }
+
+
+int [] massiv2 = mas (8); //создание массива из метода (8 элементов)
+massiv2 = zapolnenie ( massiv2, 10, 99); // заполнение созданного элемента (название, от, до)
+int index = 1;
+while (index <= 5)
+{
+    print (massiv2); // печать массива 5 раз
+    index++;
+}
+
+//печать один раз, если больше не понадобится
+//print (mas(8) );
