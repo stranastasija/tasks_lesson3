@@ -33,10 +33,10 @@ void print (int [] massiv)
 }
 
 
-int [] massiv2 = mas (8); //создание массива из метода (8 элементов)
-massiv2 = zapolnenie ( massiv2, 10, 99); // заполнение созданного элемента (название, от, до)
+int [] massiv2 = mas (12); //создание массива из метода (8 элементов)
+massiv2 = zapolnenie ( massiv2, 0, 10); // заполнение созданного элемента (название, от, до)
 int index = 1;
-while (index <= 5)
+while (index <= 1)
 {
     print (massiv2); // печать массива 5 раз
     index++;
