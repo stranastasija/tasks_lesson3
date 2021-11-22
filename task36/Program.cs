@@ -38,25 +38,29 @@ string print (int [] mass)
 
 void number (int [] mas)
 {
+    int firstsum = 0;
+    int secondsum = 0;
+
     for (int i = 0; i<=mas.Length; i++)
     {
+
         if (mas [i] %2 ==0)
         { 
-            int firstsum = 1;
             int numbers = mas [i];
             Console.WriteLine(numbers + " - число четное");
-            firstsum += i;
-            Console.WriteLine(firstsum + " четных чисел");
+            
         }
+    firstsum = firstsum + i;
+    Console.WriteLine(firstsum + " четных чисел");    
   
-        else
+        if (mas [i] %2 !=0)
         {
-            int secondsum = 1;
             int numbers = mas [i];
             Console.WriteLine(numbers + " - число нечетное");
-            secondsum += i;
-            Console.WriteLine(secondsum + " нечетных чисел");
+            
         }
+    secondsum = secondsum + i;
+    Console.WriteLine(secondsum + " нечетных чисел");
     }
 }
 
