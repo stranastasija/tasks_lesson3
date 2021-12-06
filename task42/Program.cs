@@ -1,15 +1,15 @@
 ﻿// Определить сколько чисел больше 0 введено с клавиатуры
 
 Console.WriteLine("Введите любое количество цифр через пробел");
-string Number = Console.ReadLine ();
+int Number = Convert.ToInt32(Console.ReadLine ());
 Console.WriteLine ("Вы ввели следующие числа:");
 Console.Write (Number + " ");
 
-int chislo = Convert.ToInt32(Number);
+//int chislo = Convert.ToInt32(Number);
 
 int kolichestvo = 0;
 
-while (chislo > 0)
+while (Number > 0)
 {
     kolichestvo = kolichestvo + 1;
 }
