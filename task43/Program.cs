@@ -3,6 +3,7 @@
 string programm (int a)
 {
     string number = string.Empty;
+    
 
     while (a!=0)
     {
