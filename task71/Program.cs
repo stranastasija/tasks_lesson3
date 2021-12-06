@@ -10,4 +10,4 @@ static int A(int n, int m)
     else
       return A(n - 1, A(n, m - 1));
 }
-Console.WriteLine(A(3,7));
+Console.WriteLine(A(3,8));
