@@ -2,9 +2,10 @@
 
 void number (int A, int B)
 {
-    string stepen = string.Empty;
+//    string stepen = string.Empty;
     
-    int StepenNumber = Convert.ToInt32(stepen);
+//    int StepenNumber = Convert.ToInt32(stepen);
+int StepenNumber = 0;
 
     while (A != 0) 
     {
